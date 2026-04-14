@@ -2,30 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyCourses|Personal Course Organizer</title>
     <link rel="stylesheet" href="add.css">
 </head>
 <body>
+
     <nav>
         <h2>MyCourses</h2>  
-        <a href="index.html" >Home</a>
+        <a href="index.html">Home</a>
         <a href="course.html">My Courses</a>
-        <a href="add.html"class="he">Add course</a>
+        <a href="add.html" class="he">Add course</a>
         <a href="contact.html">Contact us</a>
     </nav>
+
     <section>
-    <form method="get">
-        <h2>Course name</h2>
-        <input type="text" placeholder="Course name"required>
-        <h2>Instructor</h2>
-        <input type="text" placeholder="Instructor name:"required>
-        <h2>Credit hours</h2>
-        <input type="text" placeholder="Credit hour: "required>
-        <h2>Notes</h2>
-        <textarea placeholder="  write here" required></textarea>
-        <br>
-        <button type="submit">Submit</button>
-    </form>
+        <form method="get">
+            <h2 class="lo">Add Course</h2>
+
+            <label for="name">Course name</label>
+            <input type="text" placeholder="Course name" required id="name">
+
+            <label for="name2">Instructor</label>
+            <input type="text" placeholder="Instructor name" required id="name2">
+
+            <label for="hour">Credit hours</label>
+            <input type="number" placeholder="Credit hours" required id="hour">
+
+            <label for="note">Notes</label>
+            <textarea placeholder="Write here..." required id="note"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </section>
+
 </body>
 </html>

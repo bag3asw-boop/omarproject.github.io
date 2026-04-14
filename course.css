@@ -70,3 +70,61 @@ section hr{
     font-size: 40px;
     color: white;
 }
+@media (min-width: 600px) and (max-width: 992px){
+  nav {
+    font-size: 18px;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+  }
+
+  table {
+    width: 100%;
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .fir h2,
+  .two h2 {
+    font-size: 30px;
+  }
+}
+/* ========== Mobile ========== */
+@media (max-width: 600px){
+  nav {
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    height: max-content;
+  }
+
+  nav h2 {
+    margin: 5px 0;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;   
+    white-space: nowrap;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  td, th {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .fir h2,
+  .two h2 {
+    font-size: 20px;
+  }
+
+  section hr {
+    width: 90%;
+  }
+}

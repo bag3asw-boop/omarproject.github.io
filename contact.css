@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 *{
-  font-family: "Shrikhand", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Shrikhand", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body{
     background-color: #113C20;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    margin: 0 0 0 0;
 }
+
 nav{
     background-color: white;
     height: 50px;
@@ -17,58 +20,149 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 25px;
+    padding: 0 10px;
 }
-.he{
-    color: #06ae66;
-}
+
 nav h2{
-    display: inline;
     color: #06ae66;
     letter-spacing: 2px;
-    margin-left: 15px;
 }
+
 nav a{
     text-decoration: none;
     color: black;
     margin-right: 15px;
 }
+
 nav a:hover{
     color: #06ae66;
-    border-bottom: solid black 3px;
+    border-bottom: 3px solid black;
 }
+
+.he{
+    color: #06ae66;
+}
+
 .main{
-    height: 100%;
-    width: 100%;
-    margin-top: 0;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 40px 10px;
 }
+
 .content{
-    background-color: rgba(16, 120, 20, 0.3);
-    border-radius: 40px;
+    background: rgba(16, 120, 20, 0.3);
+    border-radius: 30px;
     width: 40%;
-    height: 70%;
+    max-width: 600px;
+    min-width: 280px;
+    padding: 30px;
     text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
+
 .content h2{
     color: #06ae66;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .content textarea{
-    text-align: center;
-    width: 80%;
-    height: 60%;
+    width: 90%;
+    height: 140px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    margin-top: 10px;
 }
+
+.content input{
+    width: 85%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.content button{
+    margin-top: 15px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #06ae66;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.content button:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+
 .content h3{
-    color: #06ae66;
+    color: #09d87ebe;
+    margin-top: 10px;
+    font-size: 16px;
 }
+
 .content hr{
     width: 60%;
+    margin: 15px auto;
+    opacity: 0.5;
+    color: white;
 }
-.content button{
-    color: #06ae66;
+
+@media (max-width: 600px){
+
+    nav{
+        flex-direction: column;
+        height: auto;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    nav a{
+        margin: 5px 0;
+    }
+
+    .content{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .content textarea{
+        width: 100%;
+    }
+
+    .content input{
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 992px){
+
+    nav{
+        font-size: 18px;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .content{
+        width: 70%;
+    }
 }
